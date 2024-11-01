@@ -6,9 +6,10 @@ build-backend = 'hatchling.build'
 [project]
 name = "dagrunner"
 version = '0.1.0'
-description = 'A template for a Python project.'
+description = 'Execute a DAG.'
 authors = [{name = "Mitchell Tillman", email ="mtillman14@gmail.com"}]
 dependencies = [
-
+    "dagpiler",
+    "dataset-builder",
 ]
 
