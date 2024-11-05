@@ -10,6 +10,6 @@ description = 'Execute a DAG.'
 authors = [{name = "Mitchell Tillman", email ="mtillman14@gmail.com"}]
 dependencies = [
     "dagpiler",
-    "dataset-builder",
+    "dag-dataset",
 ]
 
