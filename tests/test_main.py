@@ -15,8 +15,14 @@ def create_dagrunner():
 
 def test_dagrunner():
     dagrunner = create_dagrunner()
+    dag = dagrunner.dag
+    nodes = dag.nodes
+    runnable_nodes = [n for n in nodes if n.__class__.__name__ == "Process"]
+    data_object_batch = ''
+    dagrunner.run_node_one_data_object(runnable_nodes[0], data_object_batch)
     print(dagrunner)
 
 if __name__ == '__main__':
-    pytest.main([__file__])
+    # pytest.main([__file__])
+    test_dagrunner()
 
